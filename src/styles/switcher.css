@@ -1,0 +1,38 @@
+.switcher__wrapper {
+    display: flex;
+    font-size: 0.625rem;
+    align-items: flex-end;
+}
+
+.switcher__label {
+    text-transform: uppercase;
+}
+
+.switcher__container {
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.switcher__container .switcher__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.25rem;
+}
+
+.switcher__slider {
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 60px;
+    width: 3rem;
+    background: var(--toggle-background);
+    cursor: pointer;
+}
+
+.switcher__toggler {
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--toggle-color);
+    transition: transform 0.25s ease-in;
+}
