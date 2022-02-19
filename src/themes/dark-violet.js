@@ -8,9 +8,14 @@ const darkViolet = {
     'toggle-color': 'hsl(176, 100%, 44%)',
     'equal-background': 'hsl(176, 100%, 44%)',
     'equal-shadow': 'hsl(177, 92%, 70%)',
+
     'key-background': 'hsl(268, 47%, 21%)',
     'key-shadow': 'hsl(290, 70%, 36%)',
+    
     'text': 'hsl(52, 100%, 62%)',
+    'text-header': 'hsl(52, 100%, 62%)',
+    'text-success': 'hsl(0, 0%, 100%)',
+    'text-danger': 'hsl(198, 20%, 13%)',
     'text-dark': 'hsl(198, 20%, 13%)',
 }
 

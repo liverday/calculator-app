@@ -14,13 +14,17 @@
     --key-background: hsl(30, 25%, 89%);
     --key-shadow: hsl(28, 16%, 65%);
 
-    --text: hsl(0, 0%, 100%);
-    --text-dark: hsl(221, 14%, 31%);
+    --text: hsl(221, 14%, 31%);
+    --text-header: hsl(0, 0%, 100%);
+    --text-success: hsl(0, 0%, 100%);
+    --text-danger: hsl(0, 0%, 100%);
+    --text-dark: hsl(0, 0%, 100%);
 }
 
 @import './styles/header.css';
 @import './styles/keypad.css';
 @import './styles/switcher.css';
+@import './styles/display.css';
 
 * {
     margin: 0;
@@ -28,7 +32,7 @@
     box-sizing: border-box;
 }
 
-body, input, html {
+body, input, html, button {
     font-family: 'Spartan', sans-serif;
 }
 
@@ -37,7 +41,7 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 120px 30px;
 

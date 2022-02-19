@@ -1,0 +1,47 @@
+.keypad {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--keyboard-background);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.keypad-button {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--key-background);
+  border-bottom: 2px solid var(--key-shadow);
+  color: var(--text);
+  transition: all 0.25s ease;
+}
+
+.keypad-button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.success {
+  background-color: var(--control-key-background);
+  border-bottom-color: var(--control-key-shadow);
+  color: var(--text-success); 
+}
+
+.danger {
+  background-color: var(--equal-background);
+  border-bottom-color: var(--equal-shadow);
+  color: var(--text-danger);
+}
+
+.tiny {
+  font-size: 0.75rem;
+}
+
+.span-2 {
+  grid-column: span 2
+}

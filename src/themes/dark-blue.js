@@ -12,8 +12,11 @@ const darkBlue = {
     'key-background': 'hsl(30, 25%, 89%)',
     'key-shadow': 'hsl(28, 16%, 65%)',
     
-    'text': 'hsl(0, 0%, 100%)',
-    'text-dark': 'hsl(221, 14%, 31%)',
+    'text': 'hsl(221, 14%, 31%)',
+    'text-header': 'hsl(0, 0%, 100%)', 
+    'text-success': 'hsl(0, 0%, 100%)',
+    'text-danger': 'hsl(0, 0%, 100%)',
+    'text-dark': 'hsl(0, 0%, 100%)',
 }
 
 export default darkBlue;

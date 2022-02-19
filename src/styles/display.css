@@ -1,0 +1,13 @@
+.display {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--screen-background);
+  margin-top: 1rem;
+}
+
+.display-text {
+  color: var(--text-header);
+  font-size: 1.75rem;
+}
