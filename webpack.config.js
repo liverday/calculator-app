@@ -34,7 +34,8 @@ module.exports = (argv) => ({
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            title: 'Frontend Mentor | Calculator App'
         }),
         new MiniCssExtractPlugin()
     ],
