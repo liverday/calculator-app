@@ -1,5 +1,9 @@
 import './app.css';
+import { Calculator } from './calculator';
 import { getCurrentThemeName, loadTheme, toggleTheme } from './themes/theme-switcher';
+
+const calculator = new Calculator();
+let currentSelectedOperation = null;
 
 function bootstrap() {
     const currentThemeName = getCurrentThemeName();
@@ -26,10 +30,25 @@ function bindButtons() {
 
 function controlButtonListener() {
     const operation = this.textContent;
+    calculator.chooseOperation(operation);
+
+    if (['RESET', '=', 'DEL'].includes(operation) && currentSelectedOperation) {
+        currentSelectedOperation.classList.toggle('active');
+        currentSelectedOperation = null;
+        return;
+    }
+
+    if (currentSelectedOperation) {
+        currentSelectedOperation.classList.toggle('active')    
+    }
+
+    currentSelectedOperation = this
+    currentSelectedOperation.classList.toggle('active');
 }
 
 function numberButtonListener() {
     const text = this.textContent;
+    calculator.appendNumber(text);
 }
 
 bootstrap();
