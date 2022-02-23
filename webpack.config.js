@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (argv) => ({
     mode: argv.mode,
@@ -29,6 +30,13 @@ module.exports = (argv) => ({
                     'css-loader',
                     'postcss-loader',
                 ]
+            },
+            {
+                type: 'asset/resource',
+                test: /\.(png|jpe?g|gif)$/i,
+                generator: {
+                    filename: 'assets/[hash][ext][query]'
+                },
             }
         ],
     },
@@ -37,7 +45,10 @@ module.exports = (argv) => ({
             template: './src/index.html',
             title: 'Frontend Mentor | Calculator App'
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
+        new CopyWebpackPlugin({'patterns': [
+            {from:'./public/', to:'./'}
+        ]}),
     ],
     optimization: {
         minimize: true,
