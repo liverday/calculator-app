@@ -6,6 +6,7 @@
   background: var(--screen-background);
   margin-top: 1rem;
   min-height: 65px;
+  overflow: hidden;
 }
 
 .display-text {

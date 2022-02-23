@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  background-color: var(--footer-background);
+  color: var(--text-dark);
+  align-items: center;
+}
+
+footer a {
+  margin-left: 0.25rem;
+}

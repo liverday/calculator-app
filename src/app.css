@@ -3,9 +3,12 @@
     --toggle-background: hsl(223, 31%, 20%);
     --keyboard-background: hsl(223, 31%, 20%);
     --screen-background: hsl(224, 36%, 15%);
+    --footer-background: hsl(224, 36%, 15%);
 
     --control-key-background: hsl(225, 21%, 49%);
     --control-key-shadow: hsl(224, 28%, 35%);
+
+    --link-color: hsl(225, 21%, 49%);
 
     --toggle-color: hsl(6, 63%, 50%);
     --equal-background: hsl(6, 63%, 50%);
@@ -25,6 +28,7 @@
 @import './styles/keypad.css';
 @import './styles/switcher.css';
 @import './styles/display.css';
+@import './styles/footer.css';
 
 * {
     margin: 0;
@@ -40,10 +44,27 @@ body {
     background: var(--main-background);
 }
 
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .container {
-    max-width: 400px;
+    flex: 1;
+    max-width: 300px;
     margin: 0 auto;
     padding: 120px 30px;
 
     color: var(--text);
+}
+
+a { 
+    text-decoration: none;
+    transition: all 0.3s ease;   
+    color: var(--link-color);
+}
+
+a:hover {
+    filter: brightness(1.2);
 }
