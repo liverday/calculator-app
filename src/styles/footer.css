@@ -3,8 +3,15 @@ footer {
   padding: 1.5rem;
   justify-content: center;
   background-color: var(--footer-background);
-  color: var(--text-dark);
+  color: var(--text-footer);
   align-items: center;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 320px) {
+  footer {
+    font-size: 1rem;
+  }
 }
 
 footer a {

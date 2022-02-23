@@ -4,10 +4,13 @@ const darkViolet = {
     'keyboard-background': 'hsl(268, 71%, 12%)',
     'screen-background': 'hsl(268, 71%, 12%)',
     'footer-background': 'hsl(268, 71%, 12%)',
+
     'control-key-background': 'hsl(281, 89%, 26%)',
     'control-key-shadow': 'hsl(285, 91%, 52%)',
-    'link-color': 'hsl(281, 89%, 26%)',
+
+    'link-color': 'hsl(285, 91%, 52%)',
     'toggle-color': 'hsl(176, 100%, 44%)',
+
     'equal-background': 'hsl(176, 100%, 44%)',
     'equal-shadow': 'hsl(177, 92%, 70%)',
 
@@ -16,6 +19,7 @@ const darkViolet = {
     
     'text': 'hsl(52, 100%, 62%)',
     'text-header': 'hsl(52, 100%, 62%)',
+    'text-footer': 'hsl(52, 100%, 62%)',
     'text-success': 'hsl(0, 0%, 100%)',
     'text-danger': 'hsl(198, 20%, 13%)',
     'text-dark': 'hsl(198, 20%, 13%)',

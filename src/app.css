@@ -19,6 +19,7 @@
 
     --text: hsl(221, 14%, 31%);
     --text-header: hsl(0, 0%, 100%);
+    --text-footer: hsl(0, 0%, 100%);
     --text-success: hsl(0, 0%, 100%);
     --text-danger: hsl(0, 0%, 100%);
     --text-dark: hsl(0, 0%, 100%);
