@@ -53,6 +53,7 @@ body {
 
 .container {
     flex: 1;
+    width: 100%;
     padding: 30px;
 
     color: var(--text);
@@ -66,6 +67,13 @@ a {
 
 a:hover {
     filter: brightness(1.2);
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
