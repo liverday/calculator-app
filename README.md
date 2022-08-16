@@ -18,7 +18,7 @@ I learned a lot with this project and practice my pure javascript skills.
 - Display Grid
 ## How to run the project
 
-You can see the live version of the project [here](https://liverday-calculator.netlify.app/) or you can run it locally cloning the reposritory
+You can see the live version of the project [here](https://liverday-calculator.netlify.app/) or you can run it locally cloning the repository
 
 ### Installing the dependencies
 
